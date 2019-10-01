@@ -1,9 +1,304 @@
-.wrapper{
+.wrapper_border-black{
+  border-left: 2px solid #3c3c3c;
+  border-right: 2px solid #3c3c3c;
+  border-bottom: 2px solid #3c3c3c;
+}
+
+.wrapper_border-white{
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../assets/images/working.png');
-  width: 100wh;
+  text-align: center;
+  background: url('../assets/images/working.png') round;
+  width: 100vw;
   height: 100vh;
+}
+
+.header__work-with{
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.62px;
+}
+
+.header__weve-been{
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.header__mouse{
+  /* margin-top: auto; */
+  /* margin-top: 245px; */
+}
+
+.about-us{
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+.about-us__wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  width: 46.875%;
+  padding: 40px 100px;
+}
+
+.about-us__wrapper::before{
+  content: 'about us';
+  /* Style for "ABOUT US" */
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "ABOUT US" */
+  letter-spacing: 8.95px;
+  position: relative;
+  bottom: 60px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.about-us__text{
+/* Style for "When you w" */
+color: #3c3c3c;
+font-family: Lato;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  background: url(../assets/images/services.png) round;
+  height: 488px;
+}
+
+.services__wrapper{
+  margin: 115px auto;
+  padding: 40px 100px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 46.875%;
+}
+
+.services__wrapper::before{
+  /* Style for "SERVICES" */
+    content: 'services';
+    width: 192px;
+    height: 26px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "SERVICES ," */
+    letter-spacing: 8.95px;
+    position: relative;
+    bottom: 60px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.services__text{
+  /* Style for "Before we" */
+color: #ffffff;
+font-family: Lato;
+font-size: 16px;
+font-weight: 300;
+line-height: 25.89px;
+
+}
+
+.what-we-do{
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+.what-we-do__wrapper{
+  padding: 40px 100px;
+  box-sizing: border-box;
+  width: 46.875%;
+}
+
+.x{
+  /* Style for "what we do" */
+  width: 272px;
+  height: 26px;
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "what we do" */
+  letter-spacing: 8.95px;
+}
+
+.what-we-do__item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.what-we-do__item-title{
+  /* Style for "DESIGN" */
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "DESIGN" */
+  letter-spacing: 5.26px;
+  align-self: center;
+}
+
+.what-we-do__text{
+  /* Style for "Planning a" */
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25.89px;
+}
+
+.navigation-blocks{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.nav-block{
+  width: 28.646vw;
+  height: 237px;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.nav-block__center{
+  flex: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-block__name{
+  margin-bottom: 43px;
+  margin-left: 45px;
+  /* Style for "lable" */
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "lable" */
+  letter-spacing: 8.95px;
+}
+
+.topworkz{
+  background: url('../assets/images/topworkz.png') round;
+}
+
+.joint{
+  background: url('../assets/images/joint.png') round;
+}
+
+.market{
+  background: url('../assets/images/market.png') round;
+}
+
+.worktop{
+  background: url('../assets/images/worktop.png') round;
+}
+
+.label{
+  background: url('../assets/images/label.png') round;
+}
+
+.kyiv{
+  background: url('../assets/images/Kyiv.png') round;
+}
+
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact-us__wrapper{
+  padding: 40px 100px;
+  box-sizing: border-box;
+  width: 46.875%;
+  text-align: center;
+}
+
+.contact-us__text{
+  /* Style for "Planning a" */
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.89px;
+}
+
+.button{
+  /* Style for "Message co" */
+  width: 395px;
+  height: 58px;
+  border: 2px solid #3c3c3c;
+  background-color: #3c3c3c;
+  /* margin: 0 auto; */
+}
+
+.button__content{
+/* Style for "CONTACT us" */
+width: 120px;
+height: 11px;
+color: #ffffff;
+font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+/* Text style for "CONTACT us" */
+letter-spacing: 2.54px;
+}
+
+.contact-us__copyright{
+  /* Style for "© 2014. Al" */
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-us__copyright::before{
+  content: url(../assets/images/ellipse_bottom.png);
+  position: relative;
+  top: 10px;
+  right: 30px;
 }

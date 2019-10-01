@@ -4,29 +4,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Task 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
   </head>
   <body>
-    <header class="wrapper">
-      <img sr>
-      <h1>working<br>with design lab</h1>
-      <p>we've been helping startups launch and grow their businesses.<br>we help you to fill the gap between development,<br>design and product management</p>
-      <img>
+    <header class="header">
+        <img src="./assets/images/ellipse_top.png" alt="White company logo">
+        <h1 class="header__work-with">
+          working<br>with design lab
+        </h1>
+        <p class="header__weve-been">
+          we've been helping startups launch and grow their businesses.<br>we help you to fill the gap between development,
+          <br>design and product management
+        </p>
+        <img class="header__mouse" src="./assets/mouse.svg" alt="Mouse icon">
     </header>
-    <section>about us
-
+    <section class="about-us">
+      <div class="about-us__wrapper wrapper_border-black">
+        <p class="about-us__text">
+          When you work with us, you are a part of a team of commited collaborators.
+          <br>All aspects of our software development process are integrated, iterative and agile.
+        </p>
+        <p class="about-us__text">
+          Our approach unifies design, development and
+          <br>product management to create exceptional products.
+          <br>we start each project by understanding your business goals,
+          <br>the user's needs and the project requirements.
+          <br>Then we help translate them into effective and elegant solutions.
+        </p>
+      </div>
     </section>
-    <section>services
-
+    <section class="services">
+      <div class="services__wrapper wrapper_border-white">
+        <p class="services__text">
+          Before we sign a contract or write a line of code, our team will spend the neccesary
+          <br>time needed to understand your product vision.
+          <br>The outcome of this scoping sesion is a proposal or high - level statement of work.
+          <br>Based on your requirements, we can provide a complete offering or just the pieces
+          <br>you need.
+        </p>
+      </div>
     </section>
-    <section>what we do
-
+    <section class="what-we-do">
+      <div class="what-we-do__wrapper wrapper_border-black">
+        <div class="what-we-do__item">
+          <img src="./assets/design.svg" alt="design logo">
+          <h3 class="what-we-do__item-title">
+            design
+          </h3>
+          <p class="what-we-do__text">
+            Our design practice offers a full range od services including branding strategy,
+            <br>interaction and visual design and user experience testing.
+          </p>
+          <p class="what-we-do__text">
+            Throughout our project, our designers create and implement visual design and workflows,
+            <br>solicit user feedback, and work with you to make sure what gets build is what is needed.
+          </p>
+        </div>
+        <div class="what-we-do__item">
+          <img src="assets/development.svg" alt="development logo">
+          <h3 class="what-we-do__item-title">
+            development
+          </h3>
+          <p class="what-we-do__text">
+            All engineers are fluent in the latest enterprise, mobile and web development technologies.
+            <br>They collaborate with your team to write, test, and improve code on a daily basis, using proven
+            <br>practices such as test-driven development and pair programming.
+          </p>
+        </div>
+        <div class="what-we-do__item">
+          <img src="./assets/product manegement.svg" alt="product management logo">
+          <h3 class="what-we-do__item-title">
+            product management
+          </h3>
+          <p class="what-we-do__text">
+            Planning and development is iterative. Because we are constantly coding and testing, the
+            <br>products we build are always ready to go live. This iterative process allows for changes as
+            <br>business requirements evolve.
+          </p>
+        </div>
+      </div>
     </section>
-    <section>bloxx
-
+    <section class="navigation-blocks">
+      <a class="nav-block topworkz">
+        <span class="nav-block__name">
+          topworkz
+        </span>
+      </a>
+      <a class="nav-block nav-block__center joint">
+        <span class="nav-block__name">
+          joint
+        </span>
+      </a>
+      <a class="nav-block market">
+        <span class="nav-block__name">
+          market
+        </span>
+      </a>
+      <a class="nav-block worktop">
+        <span class="nav-block__name">
+          worktop
+        </span>
+      </a>
+      <a class="nav-block nav-block__center label">
+        <span class="nav-block__name">
+          label
+        </span>
+      </a>
+      <a class="nav-block kyiv">
+        <span class="nav-block__name">
+          kyiv
+        </span>
+      </a>
     </section>
-    <footer>contact us
-
+    <footer class="contact-us">
+      <div class="contact-us__wrapper wrapper_border-black">
+        <p class="contact-us__text">
+          Planning and development is iterative. Because we are constantly coding and
+          <br>testing the products we build are always ready to go live. This iterative process
+          <br>allows for changes as business requirements evolve.
+        </p>
+        <button class="button" type="button">
+          <span class="button__content">
+            contact us
+          </span>
+        </button>
+      </div>
+      <div class="contact-us__wrapper">
+        <span class="contact-us__copyright">
+          © 2014. All Rights Reserved Ellipsis.com
+        </span>
+      </div>
     </footer>
   </body>
 </html>
