@@ -1,0 +1,19 @@
+.load-content-button {
+  align-self: center;
+  width: 164px;
+  height: 60px;
+  border: 1px solid #626262;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: transparent;
+  &__text {
+    color: $color-text;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &:hover{
+    background-color: $color-signup;
+  }
+}

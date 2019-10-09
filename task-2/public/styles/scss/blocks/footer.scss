@@ -1,0 +1,35 @@
+.footer {
+  flex-shrink: 0;
+  height: 100px;
+  background-color: $color-signup;
+  // margin:auto -14.3% auto -13.45%;
+  // width: 130%;
+  &__wrapper {
+    width: 87.5%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    &_link-style {
+      text-decoration: none;
+      color: $color-title;
+    }
+    &_icon {
+      margin-left: 10px;
+      padding: 8px 12px;
+      &-facebook{
+        background: url(../../assets/facebook-icon.svg) no-repeat;
+      }
+      &-twitter{
+        background: url(../../assets/twitter-icon.svg) no-repeat;
+      }
+      &-instagram{
+        padding: 12px 16px;
+        background: url(../../assets/instagram-icon.svg) no-repeat;
+      }
+    }
+  }
+}
