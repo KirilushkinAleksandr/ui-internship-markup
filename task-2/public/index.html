@@ -1,65 +1,180 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.1.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.1.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.1.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.1.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.1.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Task 2</title>
+  <link rel="stylesheet" href="./styles/css/main.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display|Ubuntu:300&display=swap&subset=latin-ext"
+    rel="stylesheet">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
+  <div class="wrapper_page">
+    <header class="header">
+      <h1 class="header__logo">minim0</h1>
+      <nav class="navigation">
+        <a href="#" class="navigation__item">lifestyle</a>
+        <a href="#" class="navigation__item">photodiary</a>
+        <a href="#" class="navigation__item">music</a>
+        <a href="#" class="navigation__item">travel</a>
+      </nav>
+    </header>
+    <main class="wrapper_content">
+      <article class="article article_promoted">
+        <img class="article__promo article__promo_promoted" src="../public/assets/images/header-image.png"
+          alt="promoted article photo">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text article__text_promoted">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia
+          voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+          sequi nesciunt. Neque porro
+          quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+          modi tempora incidunt ut labore
+          et dolore magnam aliquam quaerat voluptatem.
+        </p>
+        <a class="article__link" href="#">leave a comment</a>
+      </article>
+      <article class="article">
+        <img class="article__promo" src="../public/assets/images/img-girl.png" alt="">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+      </article>
+      <article class="article">
+        <img class="article__promo" src="../public/assets/images/img-cup.png" alt="">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+      </article>
+      <article class="article">
+        <img class="article__promo" src="../public/assets/images/img-bridge.png" alt="">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+      </article>
+      <article class="article">
+        <img class="article__promo" src="../public/assets/images/img-hat.png" alt="">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+      </article>
+      <section class="sign-up-box">
+        <p class="sign-up-box__title">
+          Sign up for our newsletter!
+        </p>
+        <form class="email-input-form">
+          <input class="email-input-form__input" type="email" required="required"/>
+          <label class="email-input-form__label">Enter a valid email address</label>
+        </form>
+      </section>
+      <article class="article">
+        <img class="article__promo" src="../public/assets/images/img-countryside.png" alt="">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+      </article>
+      <article class="article">
+        <img class="article__promo" src="../public/assets/images/img-road.png" alt="">
+        <p class="article__category">
+          photodiary
+        </p>
+        <p class="article__title">
+          The perfect weekend getaway
+        </p>
+        <p class="article__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+      </article>
+      <button class="load-content-button">
+        <span class="load-content-button__text">
+          Load more
+        </span>
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__links">
+          <a class="footer__links_link-style" href="#">
+            Terms and conditions
+          </a>
+          <a class="footer__links_link-style" href="#">
+            Privacy
+          </a>
+        </div>
+        <div class="footer__social">
+          <a class="footer__links_link-style" href="#">
+            Follow
+          </a>
+          <a class="footer__links_icon footer__links_icon-facebook " href="#">
+          </a>
+          <a class="footer__links_icon footer__links_icon-twitter" href="#">
+          </a>
+          <a class="footer__links_icon footer__links_icon-instagram" href="#">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+</body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>
