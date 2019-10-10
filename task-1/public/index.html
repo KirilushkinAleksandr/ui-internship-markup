@@ -6,27 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to Task 1</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-  <header class="content-block content-block_header-background">
+  <header class="content-block content-block_hero-image">
     <img src="./assets/images/ellipse_top.png" alt="White company logo">
-    <h1 class="content-block_main-title">
+    <h1 class="content-block__hero-title">
       working with design lab
     </h1>
-    <p class="content-block_main-title-content">
+    <p class="content-block__hero-content">
       we've been helping startups launch and grow their businesses.
       we help you to fill the gap between development,
       design and product management
     </p>
-    <img class="header__mouse" src="./assets/mouse.svg" alt="Mouse icon" tabindex="1">
+    <img class="mouse-icon" src="./assets/mouse.svg" alt="Mouse icon" tabindex="1">
   </header>
-  <section class="content-block content-block_about-us">
-    <div class="wrapper_border-dark wrapper">
-      <span class="content-block_title">about us</span>
-      <p class="about-us__text content-block_color-dark">
+  <section class="content-block content-block_block-indent">
+    <div class="wrapper wrapper_border-dark">
+      <span class="content-block__title">about us</span>
+      <p class="content-block__content">
         When you work with us, you are a part of a team of commited collaborators.
 All aspects of our software development process are integrated, iterative and agile.
       
@@ -38,10 +38,10 @@ All aspects of our software development process are integrated, iterative and ag
       </p>
     </div>
   </section>
-  <section class="content-block content-block_services">
-    <div class="services__wrapper wrapper wrapper_border-light">
-      <span class="content-block_title">services</span>
-      <p class="services__text">
+  <section class="content-block content-block_bg-pen">
+    <div class="content-block_block-indent wrapper wrapper_border-light">
+      <span class="content-block__title">services</span>
+      <p class="content-block__content">
         Before we sign a contract or write a line of code, our team will spend the neccesary
         time needed to understand your product vision.
         The outcome of this scoping sesion is a proposal or high - level statement of work.
@@ -50,15 +50,15 @@ All aspects of our software development process are integrated, iterative and ag
       </p>
     </div>
   </section>
-  <section class="content-block list">
+  <section class="content-block content-block_block-indent">
     <div class="wrapper wrapper_border-dark">
-      <span class="content-block_title">what we do</span>
-      <div class="list__item content-block">
+      <span class="content-block__title">what we do</span>
+      <div class="company-scope">
         <img src="./assets/design.svg" alt="design logo">
-        <span class="list__item_title content-block_color-dark">
+        <span class="company-scope__title">
           design
         </span>
-        <p class="list__item_content content-block_color-dark">
+        <p class="company-scope__content">
           Our design practice offers a full range od services including branding strategy,
           interaction and visual design and user experience testing.
           Throughout our project, our designers create and implement visual design and workflows,
@@ -66,24 +66,24 @@ All aspects of our software development process are integrated, iterative and ag
           needed.
         </p>
       </div>
-      <div class="list__item content-block">
+      <div class="company-scope">
         <img src="assets/development.svg" alt="development logo">
-        <span class="list__item_title content-block_color-dark">
+        <span class="company-scope__title">
           development
         </span>
-        <p class="list__item_content content-block_color-dark">
+        <p class="company-scope__content">
           All engineers are fluent in the latest enterprise, mobile and web development technologies.
           They collaborate with your team to write, test, and improve code on a daily basis,
           using proven
           practices such as test-driven development and pair programming.
         </p>
       </div>
-      <div class="list__item content-block">
+      <div class="company-scope">
         <img src="./assets/product manegement.svg" alt="product management logo">
-        <span class="list__item_title content-block_color-dark">
+        <span class="company-scope__title">
           product management
         </span>
-        <p class="list__item_content content-block_color-dark">
+        <p class="company-scope__content">
           Planning and development is iterative. Because we are constantly coding and testing, the
           products we build are always ready to go live. This iterative process allows for
           changes as
@@ -92,48 +92,48 @@ All aspects of our software development process are integrated, iterative and ag
       </div>
     </div>
   </section>
-  <section class="navigation-blocks">
-    <a class="nav-block topworkz" href="#">
-      <span class="nav-block__name content-block_title content-block_color-light">
+  <nav class="navigation-block">
+    <a class="tile topworkz-image" href="#">
+      <span class="tile__name content-block__title">
         topworkz
       </span>
     </a>
-    <a class="nav-block nav-block_center joint" href="#">
-      <span class="nav-block__name content-block_title content-block_color-light">
+    <a class="tile tile_center joint-image" href="#">
+      <span class="tile__name content-block__title">
         joint
       </span>
     </a>
-    <a class="nav-block market" href="#">
-      <span class="nav-block__name content-block_title content-block_color-light">
+    <a class="tile market-image" href="#">
+      <span class="tile__name content-block__title">
         market
       </span>
     </a>
-    <a class="nav-block worktop" href="#">
-      <span class="nav-block__name content-block_title content-block_color-light">
+    <a class="tile worktop-image" href="#">
+      <span class="tile__name content-block__title">
         worktop
       </span>
     </a>
-    <a class="nav-block nav-block_center label" href="#">
-      <span class="nav-block__name content-block_title content-block_color-light">
+    <a class="tile tile_center label-image" href="#">
+      <span class="tile__name content-block__title">
         label
       </span>
     </a>
-    <a class="nav-block kyiv" href="#">
-      <span class="nav-block__name content-block_title content-block_color-light">
+    <a class="tile kyiv-image" href="#">
+      <span class="tile__name content-block__title">
         kyiv
       </span>
     </a>
-  </section>
-  <section class="content-block contact-info">
-    <div class="contact-info__wrapper wrapper wrapper_border-dark">
-      <span class="contact-info_title content-block_title">contact us</span>
-      <p class="content-block_content">
+  </nav>
+  <section class="content-block content-block_block-indent">
+    <div class="wrapper wrapper_border-dark">
+      <span class="content-block__title_small-font content-block__title">contact us</span>
+      <p class="content-block__content">
         Planning and development is iterative. Because we are constantly coding and
         testing the products we build are always ready to go live. This iterative process
         allows for changes as business requirements evolve.
       </p>
-      <a class="contact-info__button" href="#">
-        <span class="contact-info__button-content content-block_color-light">
+      <a class="button" href="#">
+        <span class="button-content">
           contact us
         </span>
       </a>
@@ -141,7 +141,7 @@ All aspects of our software development process are integrated, iterative and ag
   </section>
   <footer class="content-block">
     <div class="footer-info wrapper">
-      <span class="footer-info_text">
+      <span class="footer-info__text">
         © 2014. All Rights Reserved Ellipsis.com
       </span>
     </div>
