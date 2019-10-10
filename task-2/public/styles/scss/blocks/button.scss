@@ -2,6 +2,9 @@
   &_link {
     text-decoration: none;
     @include article-category;
+    &:hover {
+      opacity: 0.4;
+    }
   }
   
   &__text {
