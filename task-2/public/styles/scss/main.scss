@@ -1,10 +1,12 @@
 @import './normalize.scss';
 @import './variables/colors.scss';
+@import './variables/mixins.scss';
 @import './blocks/wrapper.scss';
 @import './blocks/header.scss';
+@import './blocks/button.scss';
 @import './blocks/navigation.scss';
 @import './blocks/article.scss';
 @import './blocks/sign-up-box.scss';
 @import './blocks/input-form.scss';
-@import './blocks/load-content-button.scss';
 @import './blocks/footer.scss';
+@import './blocks/social.scss';

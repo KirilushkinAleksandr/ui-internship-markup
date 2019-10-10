@@ -7,7 +7,6 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
 
   &_content {
@@ -17,9 +16,15 @@
     flex-flow: row wrap;
     justify-content: space-between;
   }
+
+  &_sticky {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 @media all and (max-width: 768px) {
-  .wrapper_content{
+  .wrapper_content {
     align-items: center;
     flex-direction: column;
   }

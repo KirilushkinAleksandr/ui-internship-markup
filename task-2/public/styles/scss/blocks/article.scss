@@ -1,34 +1,25 @@
 .article {
+  margin-bottom: 100px;
   &__promo {
     &_promoted {
       width: 114.3%;
-      margin-bottom: 10%;
+      margin-bottom: 100px;
       position: relative;
       right: 7.15%;
     }
   }
 
   &__category {
-    color: $color-link;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
+    display: block;
+    margin-top: 1em;
   }
 
   &__title {
-    color: $color-text;
-    font-family: "Playfair Display";
-    font-size: 30px;
-    font-weight: 400;
+    @include article-title;
   }
 
   &__text {
-    color: $color-text;
-    font-family: "Playfair Display";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+    @include text;
     white-space: pre-wrap;
     &_promoted {
       white-space: normal;
@@ -37,10 +28,6 @@
 
   &__link {
   text-decoration: none;
-  color: $color-link;
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
+  @include article-category;
   }
 }

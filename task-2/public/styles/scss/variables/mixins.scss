@@ -1,0 +1,61 @@
+@mixin header-logo {
+  color: $color-title;
+  font-family: Inconsolata;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+@mixin navigation-item {
+  @include footer-item;
+  color: $color-text;
+  text-transform: uppercase;
+}
+
+@mixin article-category {
+  color: $color-link;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin article-title {
+  color: $color-text;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@mixin text {
+  color: $color-text;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin signup-title {
+  @include article-title;
+  color: $color-signup-title;
+  letter-spacing: 0.75px;
+}
+
+@mixin load-button {
+  @include text;
+  font-size: 20px;
+}
+
+@mixin footer-item {
+  @include text;
+  color: $color-title;
+  text-transform: none;
+}
+
+@mixin inserted-text {
+  color: $color-text;
+  font-size: 18px;
+}
+

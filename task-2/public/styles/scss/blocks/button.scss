@@ -1,0 +1,23 @@
+.button {
+  &_link {
+    text-decoration: none;
+    @include article-category;
+  }
+  
+  &__text {
+    @include load-button;
+  }
+
+  &_load {
+    align-self: center;
+    width: 164px;
+    height: 60px;
+    border: 1px solid $color-text;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: transparent;
+    &:hover {
+      background-color: $color-signup;
+    }
+  }
+}

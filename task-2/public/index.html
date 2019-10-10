@@ -12,23 +12,24 @@
 </head>
 
 <body>
-  <div class="wrapper_page">
-    <header class="header">
+  <div class="wrapper_sticky">
+    <div class="wrapper_page">
+      <header class="header">
       <h1 class="header__logo">minim0</h1>
       <nav class="navigation">
-        <a href="#" class="navigation__item">lifestyle</a>
-        <a href="#" class="navigation__item">photodiary</a>
-        <a href="#" class="navigation__item">music</a>
-        <a href="#" class="navigation__item">travel</a>
+        <a href="#" class="navigation__item button_link">lifestyle</a>
+        <a href="#" class="navigation__item button_link">photodiary</a>
+        <a href="#" class="navigation__item button_link">music</a>
+        <a href="#" class="navigation__item button_link">travel</a>
       </nav>
-    </header>
-    <main class="wrapper_content">
-      <article class="article article_promoted">
+      </header>
+      <section class="wrapper_content">
+        <article class="article">
         <img class="article__promo article__promo_promoted" src="./assets/images/header-image.png"
           alt="promoted article photo">
-        <p class="article__category">
+        <a class="article__category button_link" href="#">
           photodiary
-        </p>
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -50,12 +51,12 @@
           et dolore magnam aliquam quaerat voluptatem.
         </p>
         <a class="article__link" href="#">leave a comment</a>
-      </article>
-      <article class="article">
+        </article>
+        <article class="article">
         <img class="article__promo" src="./assets/images/img-girl.png" alt="">
-        <p class="article__category">
-          photodiary
-        </p>
+        <a class="article__category button_link" href="#">
+          lifestyle
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -64,12 +65,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
         </p>
-      </article>
-      <article class="article">
+        </article>
+        <article class="article">
         <img class="article__promo" src="./assets/images/img-cup.png" alt="">
-        <p class="article__category">
-          photodiary
-        </p>
+        <a class="article__category button_link" href="#">
+          lifestyle
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -78,12 +79,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
         </p>
-      </article>
-      <article class="article">
+        </article>
+        <article class="article">
         <img class="article__promo" src="./assets/images/img-bridge.png" alt="">
-        <p class="article__category">
+        <a class="article__category button_link" href="#">
           photodiary
-        </p>
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -92,12 +93,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
         </p>
-      </article>
-      <article class="article">
+        </article>
+        <article class="article">
         <img class="article__promo" src="./assets/images/img-hat.png" alt="">
-        <p class="article__category">
+        <a class="article__category button_link" href="#">
           photodiary
-        </p>
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -106,22 +107,26 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
         </p>
-      </article>
-      <section class="sign-up-box">
-        <p class="sign-up-box__title">
-          Sign up for our newsletter!
-        </p>
-        <form class="input-form">
-          <input class="input-form__submit-icon" type="image" src="./assets/send-icon.svg">
-          <input class="input-form__email-input" type="text" required="required" pattern=".+@.+"/>
-          <label class="input-form__label">Enter a valid email address</label>
-        </form>
+        </article>
       </section>
-      <article class="article">
+    </div>
+    <section class="sign-up-box">
+      <p class="sign-up-box__title">
+        Sign up for our newsletter!
+      </p>
+      <form class="input-form" method="POST" action="#" name="sign-up-form">
+        <input class="input-form__submit-icon" type="image" name="submit-button" id="subscribe-button" src="./assets/send-icon.svg">
+        <input class="input-form__email-input" type="text" name="user-email" id="email-input" required="required"/>
+        <label class="input-form__label" for="email-input">Enter a valid email address</label>
+      </form>
+    </section>
+    <div class="wrapper_page">
+      <section class="wrapper_content">
+        <article class="article">
         <img class="article__promo" src="./assets/images/img-countryside.png" alt="">
-        <p class="article__category">
-          photodiary
-        </p>
+        <a class="article__category button_link" href="#">
+          lifestyle
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -130,12 +135,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
         </p>
-      </article>
-      <article class="article">
+        </article>
+        <article class="article">
         <img class="article__promo" src="./assets/images/img-road.png" alt="">
-        <p class="article__category">
-          photodiary
-        </p>
+        <a class="article__category button_link" href="#">
+          lifestyle
+        </a>
         <p class="article__title">
           The perfect weekend getaway
         </p>
@@ -144,38 +149,38 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
         </p>
-      </article>
-      <button class="load-content-button">
-        <span class="load-content-button__text">
+        </article>
+        <button class="button_load">
+        <span class="button button__text">
           Load more
         </span>
-      </button>
-    </main>
+        </button>
+      </section>
+    </div>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__links">
+        <nav class="footer__links">
           <a class="footer__links_link-style" href="#">
             Terms and conditions
           </a>
           <a class="footer__links_link-style" href="#">
             Privacy
           </a>
-        </div>
-        <div class="footer__social">
-          <a class="footer__links_link-style" href="#">
+        </nav>
+        <div class="social">
+          <a class="social__links_link-style">
             Follow
           </a>
-          <a class="footer__links_icon footer__links_icon-facebook " href="#">
+          <a class="social__links_icon social__links_icon-facebook " href="#">
           </a>
-          <a class="footer__links_icon footer__links_icon-twitter" href="#">
+          <a class="social__links_icon social__links_icon-twitter" href="#">
           </a>
-          <a class="footer__links_icon footer__links_icon-instagram" href="#">
+          <a class="social__links_icon social__links_icon-instagram" href="#">
           </a>
         </div>
       </div>
     </footer>
   </div>
-  
 </body>
 
 </html>
