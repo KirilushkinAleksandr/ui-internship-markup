@@ -13,7 +13,12 @@
     width: 87.5%;
     margin: auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_line{
+    display: flex;
     justify-content: space-between;
   }
 
@@ -24,7 +29,7 @@
   }
 }
 @media all and (max-width: 768px) {
-  .wrapper_content {
+  .wrapper_line {
     align-items: center;
     flex-direction: column;
   }
