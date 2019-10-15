@@ -29,6 +29,7 @@
 .content-block_hero-image {
   background-image: url(../assets/images/working.png);
   background-size: cover;
+  background-position: right;
   width: 100%;
   height: 100vh;
 }
@@ -70,6 +71,7 @@
   text-align: center;
   box-sizing: border-box;
   width: 46.875%;
+  padding: 0 5%;
 }
 
 .content-block__title {
