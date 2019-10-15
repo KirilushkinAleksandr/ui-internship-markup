@@ -1,4 +1,4 @@
-.wrapper_border-dark {
+.content-block__wrapper_border-dark {
   color: #3c3c3c;
   border-left: 2px solid #3c3c3c;
   border-right: 2px solid #3c3c3c;
@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
 }
 
-.wrapper_border-light {
+.content-block__wrapper_border-light {
   color: #ffffff;
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
@@ -33,6 +33,10 @@
   height: 100vh;
 }
 
+.content-block__hero-logo{
+  margin-top: 27vh;
+}
+
 .content-block__hero-title {
   color: #ffffff;
   font-family: Lato;
@@ -40,6 +44,8 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5.75px;
+  white-space: pre-line;
+  margin-bottom: 0;
 }
 
 .content-block__hero-content {
@@ -50,10 +56,15 @@
   line-height: 19.33px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
-.wrapper {
+.content-block__hero-icon-wrapper{
+  margin-top: auto;
+  margin-bottom: 52px;;
+}
+
+.content-block__wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -81,8 +92,8 @@
 }
 
 .mouse-icon {
-  position: relative;
-  top: 18%;
+  width: 23px;
+  height: 37px;
 }
 
 .content-block_block-indent {
@@ -97,7 +108,7 @@
 }
 
 .company-scope {
-  margin: 20px 18%;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,6 +166,11 @@
   margin-bottom: 43px;
   margin-left: 45px;
   text-align: left;
+  font-family: Lato;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.97px;
 }
 
 .topworkz-image {
@@ -197,7 +213,7 @@
   height: 58px;
   border: 2px solid #3c3c3c;
   background-color: #3c3c3c;
-  margin: 5% 18%;
+  margin: 30px auto;
   text-decoration: none;
   display: inline-flex;
   justify-content: center;

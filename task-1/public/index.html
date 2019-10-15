@@ -12,20 +12,22 @@
 
 <body>
   <header class="content-block content-block_hero-image">
-    <img src="./assets/images/ellipse_top.png" alt="White company logo">
-    <h1 class="content-block__hero-title">
-      working with design lab
+    <img class="content-block__hero-logo"  src="./assets/images/ellipse_top.png" alt="White company logo">
+    <h1 class="content-block__hero-title">working 
+with design lab
     </h1>
     <p class="content-block__hero-content">
       we've been helping startups launch and grow their businesses.
       we help you to fill the gap between development,
       design and product management
     </p>
-    <img class="mouse-icon" src="./assets/mouse.svg" alt="Mouse icon" tabindex="1">
+    <a class="content-block__hero-icon-wrapper" href="#about-us">
+      <img class="mouse-icon" src="./assets/mouse.svg" alt="Mouse icon" tabindex="1">
+    </a>
   </header>
   <section class="content-block content-block_block-indent">
-    <div class="wrapper wrapper_border-dark">
-      <span class="content-block__title">about us</span>
+    <div class="content-block__wrapper content-block__wrapper_border-dark">
+      <span class="content-block__title" id="about-us">about us</span>
       <p class="content-block__content">
         When you work with us, you are a part of a team of commited collaborators.
 All aspects of our software development process are integrated, iterative and agile.
@@ -39,7 +41,7 @@ All aspects of our software development process are integrated, iterative and ag
     </div>
   </section>
   <section class="content-block content-block_bg-pen">
-    <div class="content-block_block-indent wrapper wrapper_border-light">
+    <div class="content-block_block-indent content-block__wrapper content-block__wrapper_border-light">
       <span class="content-block__title">services</span>
       <p class="content-block__content">
         Before we sign a contract or write a line of code, our team will spend the neccesary
@@ -51,7 +53,7 @@ All aspects of our software development process are integrated, iterative and ag
     </div>
   </section>
   <section class="content-block content-block_block-indent">
-    <div class="wrapper wrapper_border-dark">
+    <div class="content-block__wrapper content-block__wrapper_border-dark">
       <span class="content-block__title">what we do</span>
       <div class="company-scope">
         <img src="./assets/design.svg" alt="design logo">
@@ -94,38 +96,38 @@ All aspects of our software development process are integrated, iterative and ag
   </section>
   <nav class="navigation-block">
     <a class="tile topworkz-image" href="#">
-      <span class="tile__name content-block__title">
+      <span class="tile__name">
         topworkz
       </span>
     </a>
     <a class="tile tile_center joint-image" href="#">
-      <span class="tile__name content-block__title">
+      <span class="tile__name">
         joint
       </span>
     </a>
     <a class="tile market-image" href="#">
-      <span class="tile__name content-block__title">
+      <span class="tile__name">
         market
       </span>
     </a>
     <a class="tile worktop-image" href="#">
-      <span class="tile__name content-block__title">
+      <span class="tile__name">
         worktop
       </span>
     </a>
     <a class="tile tile_center label-image" href="#">
-      <span class="tile__name content-block__title">
+      <span class="tile__name">
         label
       </span>
     </a>
     <a class="tile kyiv-image" href="#">
-      <span class="tile__name content-block__title">
+      <span class="tile__name">
         kyiv
       </span>
     </a>
   </nav>
   <section class="content-block content-block_block-indent">
-    <div class="wrapper wrapper_border-dark">
+    <div class="content-block__wrapper content-block__wrapper_border-dark">
       <span class="content-block__title_small-font content-block__title">contact us</span>
       <p class="content-block__content">
         Planning and development is iterative. Because we are constantly coding and
@@ -140,7 +142,7 @@ All aspects of our software development process are integrated, iterative and ag
     </div>
   </section>
   <footer class="content-block">
-    <div class="footer-info wrapper">
+    <div class="footer-info">
       <span class="footer-info__text">
         © 2014. All Rights Reserved Ellipsis.com
       </span>
