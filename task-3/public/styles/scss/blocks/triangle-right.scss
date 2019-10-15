@@ -1,12 +1,9 @@
-.triangle-section {
+.triangle-right {
   position: relative;
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 10%;
+    align-items: stretch;
     width: 60%;
-    box-sizing: border-box;
     &::after {
       content: "";
       position: absolute;

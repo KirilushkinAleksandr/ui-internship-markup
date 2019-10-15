@@ -1,9 +1,9 @@
 .content-block {
-  padding: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  padding: 10%;
 
   &__category {
     @include font_Exo_md_uppercase;
@@ -12,12 +12,16 @@
 
   &__title {
     @include font_Exo_xl;
+    margin-top: 0;
   }
 
   &__content {
     @include font_Exo_md;
     color: $color-text-main;
     opacity: 0.66;
+    &_narrow {
+      padding: 0 250px;
+    }
   }
 
   &__articles-container {
@@ -28,10 +32,20 @@
 
   &_bg-images {
     height: 675px;
-    background: url(../../assets/Pen_holder.png) 10% 0 no-repeat, url(../../assets/Earphones.png) 90% -2% no-repeat, url(../../assets/Coffee_Cup.png) 90% 100% no-repeat #f6f5f3;
+    padding: 5% 10%;
+    background: url(../../assets/Pen_holder.png) 10% 0 no-repeat, url(../../assets/Earphones.png) 90% -2% no-repeat, url(../../assets/Coffee_Cup.png) 90% 100% no-repeat;
+  }
+
+  &_bg-dark {
+    background-color: $color-form-text;
   }
 
   &__dots {
     @include dots;
+  }
+
+  &_full-height {
+    padding-bottom: 0;
+    padding-top: 5%;
   }
 }
