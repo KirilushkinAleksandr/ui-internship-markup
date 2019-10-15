@@ -1,0 +1,20 @@
+.triangle-section {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    width: 60%;
+    box-sizing: border-box;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      background-image: linear-gradient(135deg, #ededed 58.3%, #ff8a8a 50%);
+    }
+  }
+}

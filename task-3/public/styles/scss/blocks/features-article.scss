@@ -1,0 +1,17 @@
+.features-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title{
+    @include font_Exo_lg;
+    color: $color-text-main;
+  }
+
+  &__content {
+    @include font_Exo_md;
+    color: $color-text-main;
+    opacity: 0.66;
+    text-align: center;
+  }
+}

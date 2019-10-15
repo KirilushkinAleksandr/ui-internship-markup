@@ -1,0 +1,37 @@
+.content-block {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__category {
+    @include font_Exo_md_uppercase;
+    color: $color-brand;
+  }
+
+  &__title {
+    @include font_Exo_xl;
+  }
+
+  &__content {
+    @include font_Exo_md;
+    color: $color-text-main;
+    opacity: 0.66;
+  }
+
+  &__articles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_bg-images {
+    height: 675px;
+    background: url(../../assets/Pen_holder.png) 10% 0 no-repeat, url(../../assets/Earphones.png) 90% -2% no-repeat, url(../../assets/Coffee_Cup.png) 90% 100% no-repeat #f6f5f3;
+  }
+
+  &__dots {
+    @include dots;
+  }
+}
