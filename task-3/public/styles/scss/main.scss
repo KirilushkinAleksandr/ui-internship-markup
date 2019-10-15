@@ -1,6 +1,8 @@
 @import './blocks/normalize.scss';
 @import './variables/colors.scss';
 @import './variables/mixins.scss';
+@import './blocks/video.scss';
+@import './blocks/header.scss';
 @import './blocks/content-block.scss';
 @import './blocks/triangle-right.scss';
 @import './blocks/features-article.scss';
@@ -8,36 +10,7 @@
 @import './blocks/partners-block.scss';
 @import './blocks/person.scss';
 @import './blocks/form-block.scss';
-
-// body {
-//   margin: 0px;
-//   height: 100%;
-// }
-// .header {
-//   height: 100vh;
-//   width: 100%;
-// }
-// .video {
-//   height: 100vh;
-//   min-height: 100vh;
-//   object-fit: cover;
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     top: 0;
-//     left: 0;
-// }
-
-// .responsive{
-//   background-image: -webkit-linear-gradient(45deg, #ff8a8a 30%, #ffffff 0);
-// }
-
-// .safari{
-//   height: 750px;
-//   background-color: #f6f5f3;
-// }
-
-// .form-block{
-//   background-color: #323969;
-//   height: 750px;
-// }
+@import './blocks/form.scss';
+@import './blocks/footer.scss';
+@import './blocks/footer-content.scss';
+@import './blocks/navigation-block.scss';

@@ -12,15 +12,15 @@
         <video muted loop class="video" poster="assets/In-The-Clouds.jpg">
           <source src="https://storage.googleapis.com/coverr-main/mp4%2FIn-The-Clouds.mp4" type="video/mp4">
         </video>
-        <div>
-          <h1>There is no other platforms for you as like</h1>
-          <div class="play-button">
+        <div class="header__content">
+          <h1 class="header__title">There is no other platforms for you as like</h1>
+          <div class="header__play-button" onclick="playVideo()">
             <img src="./assets/dribbble_S.png">
           </div>
-          <button>
-            <span>try now</span>
-          </button>
-          <p>
+          <a class="header__submit" href="#">
+              Try now
+          </a>
+          <p class="header__submit-text">
             * No need to add cards details
           </p>
         </div>
@@ -165,62 +165,98 @@
         <img class="content-block__fixed-image" src="./assets/safari.png">
       </section>
       <section class="form-block">
-        <p>
+        <p class="form-block__subtitle">
           new features
         </p>
-        <h2>
-          Over 1000 designers are using
+        <h2 class="form-block__title">
+          Over 1000 designers are using ...
         </h2>
-        <span>....</span>
-        <form>
-          <input placeholder="full name">
-          <input placeholder="your email">
-          <input placeholder="password">
+        <form class="form" action="#" method="POST">
+          <input class="form__input" type="text" placeholder="full name">
+          <input class="form__input" type="email" placeholder="your email">
+          <input class="form__input" type="password" placeholder="password">
+          <div class="form__button-wrapper">
+            <p class="form__button-text">
+              30 days free trial for all.
+            </p>
+            <input disabled class="form__button form__input-submit form__input-submit_disabled" type="submit" value="try now">
+          </div>
         </form>
-        <p>
+        <p class="form-block__text">
           By Signing up you agree to our 
-          <a>terms & Services</a>.
+          <a class="form-block__link" href="#">terms & Services</a>.
         </p>
       </section>
     </main>
-    <footer>
-      <div class="contacts">
-        <h3>
-          StartEx
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__column">
+        <h3 class="footer-content__logo">
+          Start
+          <span class="footer-content__logo-icon">
+            Ex
+          </span>
         </h3>
-        <p>
+        <p class="footer-content__text">
           Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. 
           USA &  CAN: 1-888-123-4567
           Address: 34 Brokel Rd. NY
         </p>
-      </div>
-      <div class="support">
-        <h3>
-          Support
-        </h3>
-        <a>Help Center</a>
-        <a>Get Started</a>
-        <a>Contact US</a>
-      </div>
-      <div class="About US">
-        <h3>
-          About US
-        </h3>
-        <a>About Us</a>
-        <a>Terms of Use</a>
-        <a>Privacy Policy</a>
-      </div>
-      <div class="Get Newsletter">
-        <form>
-          <input placeholder="email">
-        </form>
-        <div class="navigation-block">
-          <a>basketball</a>
-          <a>facebook</a>
-          <a>g+</a>
-          <a>twitter</a>
+        </div>
+        <div class="footer-content__column">
+          <h3 class="footer-content__title">
+            Support
+          </h3>
+          <a class="footer-content__link" href="#">
+            Help Center
+          </a>
+          <a class="footer-content__link" href="#">
+            Get Started
+          </a>
+          <a class="footer-content__link" href="#">
+            Contact US
+          </a>
+        </div>
+        <div class="footer-content__column">
+          <h3 class="footer-content__title">
+            About US
+          </h3>
+          <a class="footer-content__link" href="#">
+            About Us
+          </a>
+          <a class="footer-content__link" href="#">
+            Terms of Use
+          </a>
+          <a class="footer-content__link" href="#">
+            Privacy Policy
+          </a>
+        </div>
+        <div class="footer-content__column">
+          <h3 class="footer-content__title">
+            Get Newsletter
+          </h3>
+          <form action="#" class="form" method="POST">
+            <input class="form__input form__input-subscribe" placeholder="email">
+            <input class="form__input form__input-submit" type="submit">
+          </form>
+          <div class="navigation-block">
+            <a class="navigation-block__link-icon" href="#">
+              <img alt="dribble" src="assets/dribble.svg">
+            </a>
+            <a class="navigation-block__link-icon" href="#">
+              <img alt="facebook" src="assets/facebook.svg">
+            </a>
+            <a class="navigation-block__link-icon" href="#">
+              <img alt="google plus" src="assets/googleplus.svg">
+            </a>
+            <a class="navigation-block__link-icon" href="#">
+              <img alt="twitter" src="assets/twitter.svg">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./scripts/play-video.js"></script>
+    <script src="./scripts/input-disabled.js"></script>
   </body>
 </html>
