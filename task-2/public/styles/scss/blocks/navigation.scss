@@ -8,3 +8,13 @@
     margin-left: 70px;
   }
 }
+
+@media all and (max-width: 768px) {
+  .navigation{
+    justify-content: space-between;
+    padding-left: 30px;
+    &__item {
+      margin: 0;
+    }
+  }
+}

@@ -16,7 +16,7 @@
   &__links {
     &_link-style {
       text-decoration: none;
-      @include footer-item;
+      @include font-playfair-md-no-transform;
       margin-right: 15px;
     }
   }

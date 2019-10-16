@@ -1,4 +1,4 @@
-@mixin header-logo {
+@mixin font-inconsolata-md {
   color: $color-title;
   font-family: Inconsolata;
   font-size: 30px;
@@ -9,12 +9,12 @@
 }
 
 @mixin navigation-item {
-  @include footer-item;
+  @include font-playfair-md-no-transform;
   color: $color-text;
   text-transform: uppercase;
 }
 
-@mixin article-category {
+@mixin font-ubuntu-thin {
   color: $color-link;
   font-family: Ubuntu;
   font-size: 14px;
@@ -22,14 +22,14 @@
   text-transform: uppercase;
 }
 
-@mixin article-title {
+@mixin font-playfair-xl {
   color: $color-text;
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 400;
 }
 
-@mixin text {
+@mixin font-playfair-md {
   color: $color-text;
   font-family: "Playfair Display";
   font-size: 14px;
@@ -37,24 +37,24 @@
   line-height: 24px;
 }
 
-@mixin signup-title {
-  @include article-title;
+@mixin font-playfair-xl-narrow {
+  @include font-playfair-xl;
   color: $color-signup-title;
   letter-spacing: 0.75px;
 }
 
-@mixin load-button {
-  @include text;
+@mixin font-playfair-lg {
+  @include font-playfair-md;
   font-size: 20px;
 }
 
-@mixin footer-item {
-  @include text;
+@mixin font-playfair-md-no-transform {
+  @include font-playfair-md;
   color: $color-title;
   text-transform: none;
 }
 
-@mixin inserted-text {
+@mixin font-input {
   color: $color-text;
   font-size: 18px;
 }

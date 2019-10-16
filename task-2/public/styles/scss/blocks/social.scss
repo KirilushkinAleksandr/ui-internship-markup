@@ -1,9 +1,6 @@
 .social {
-  &__links {
-    &_link-style {
-      text-decoration: none;
-      @include footer-item;
-    }
+  &__link {
+    @include font-playfair-md-no-transform;
     &_icon {
       margin-left: 10px;
       padding: 8px 12px;

@@ -1,26 +1,21 @@
 .button {
+  width: 164px;
+  height: 60px;
+  border: 1px solid $color-text;
+  background-color: transparent;
+  &:hover {
+  background-color: $color-signup;
+  }
+
   &_link {
     text-decoration: none;
-    @include article-category;
+    @include font-ubuntu-thin;
     &:hover {
       opacity: 0.4;
     }
   }
   
   &__text {
-    @include load-button;
-  }
-
-  &_load {
-    align-self: center;
-    width: 164px;
-    height: 60px;
-    border: 1px solid $color-text;
-    margin: auto;
-    margin-bottom: 100px;
-    background-color: transparent;
-    &:hover {
-      background-color: $color-signup;
-    }
+    @include font-playfair-lg;
   }
 }

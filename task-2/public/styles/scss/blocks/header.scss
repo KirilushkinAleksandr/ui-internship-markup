@@ -2,6 +2,6 @@
   display: flex;
   justify-content: space-between;
   &__logo {
-    @include header-logo;
+    @include font-inconsolata-md;
   }
 }

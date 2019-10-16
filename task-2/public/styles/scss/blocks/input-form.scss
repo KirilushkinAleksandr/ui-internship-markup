@@ -1,6 +1,6 @@
 .input-form {
   &__label {
-    @include text;
+    @include font-playfair-md;
     position: relative;
     pointer-events: none;
     left: 5px;
@@ -9,7 +9,7 @@
   }
   &__email-input {
     background: none;
-    @include inserted-text;
+    @include font-input;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 400px;
