@@ -1,0 +1,110 @@
+@mixin font-raleway {
+  font-family: 'Raleway';
+}
+
+@mixin font-raleway-regular {
+  @include font-raleway;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin font-raleway-light {
+  @include font-raleway;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+@mixin font-raleway-bold {
+  @include font-raleway;
+  font-size: 94px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin font-raleway-sm {
+  @include font-raleway;
+  font-size: 35px;
+}
+
+@mixin font-opensans {
+  font-family: "Open Sans";
+}
+
+@mixin font-opensans-light {
+  @include font-opensans;
+  font-weight: 300;
+}
+
+@mixin font-opensans-regular {
+  @include font-opensans;
+  font-weight: 400;
+}
+
+@mixin font-opensans-bold {
+  @include font-opensans;
+  font-weight: 700;
+}
+
+@mixin font-opensans-semi-bold {
+  @include font-opensans;
+  font-weight: 600;
+}
+
+@mixin font-opensans-regular-md {
+  @include font-opensans-regular;
+  font-size: 12px;
+}
+
+@mixin font-opensans-regular-lg-italic {
+  @include font-opensans-regular-lg;
+  font-style: italic;
+}
+
+@mixin font-upper {
+  text-transform: uppercase;
+}
+
+@mixin font-opensans-bold-lg {
+  @include font-opensans-bold;
+  font-size: 20px;
+}
+
+@mixin font-opensans-regular-md {
+  @include font-opensans-regular;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin font-opensans-regular-lg {
+  @include font-opensans-regular;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin font-opensans-semi-bold-sm {
+  @include font-opensans-semi-bold;
+  font-size: 14px;
+}
+
+@mixin font-opensans-semi-bold-italic {
+  @include font-opensans-semi-bold;
+  font-style: italic;
+  line-height: 24px;
+}
+
+@mixin font-opensans-semi-bold-md {
+  @include font-opensans-semi-bold;
+  font-size: 15px;
+}
+
+@mixin horizontal-line($color) {
+  background: linear-gradient(to top, $color 5%, transparent 5%);
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+@mixin font-awesome {
+  font-size: 48px;
+}

@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  white-space: pre-line;
+
+  &__title {
+    &_hero {
+      @include font-raleway-regular;
+      color: $color-title-light;
+      @include horizontal-line($color-title-light);
+    }
+    @include font-opensans-bold-lg;
+    color: $color-subtitle-dark;
+    @include horizontal-line($color-brand);
+  }
+
+  &__text {
+    &_hero {
+      @include font-raleway-light;
+      color: $color-title-light;
+      opacity: 0.8;
+    }
+    @include font-opensans-regular-md;
+    line-height: 20px;
+    color: $color-text;
+  }
+}

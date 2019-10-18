@@ -1,0 +1,19 @@
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    @include font-opensans-semi-bold-md;
+    color: $color-title-light;
+  }
+
+  &_promoted {
+    background-color: $color-brand;
+    width: 100%;
+    border: none;
+  }
+}
