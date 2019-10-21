@@ -1,5 +1,5 @@
 .icon {
-  &_round {
+  &_round{
     border: 2px solid;
     box-sizing: border-box;
     display: flex !important;
@@ -9,6 +9,7 @@
 
   &_md {
     @include round-image(40px);
+    position: absolute;
   }
 
   &_lg {

@@ -47,9 +47,13 @@
                 accumsan et viverra justo commodo.
               </p>
             </div>
-            <button class="button" type="submit">
-              <span class="button__text">Download</span>
-            </button>
+            <form target="_blank" method="GET" action="./assets/modulepatterns.pdf">
+              <button class="button" type="submit">
+                <span class="button__text">
+                  Download
+                </span>
+              </button>
+            </form>
           </div>
           <div class="form-block form-block_fixed">
             <div class="form-block__title">
@@ -63,9 +67,13 @@
             </div>
             <form class="form-block" method="POST" action="#" name="subscribe-form">
               <div class="form-block__container form-block__container_wide">
-                <input class="form-block__input form-block__input_small" placeholder="Name" title="Only latin letters" required pattern="^[A-Za-z]+$" type="text">
+                <input class="form-block__input form-block__input_small" placeholder="Name" title="Only latin letters"
+                  required pattern="^[A-Za-z]+$" type="text">
                 <input class="form-block__input form-block__input_small" placeholder="Email" required type="email">
-                <input class="form-block__input form-block__input_small" placeholder="Password" required type="password" minlength="6" title="min 6 characters, required: 1 capital letter, 1 lower-case letter, 1 digit, 1 special character" pattern="[A-Z]+[a-z]+\d+\W+">
+                <input class="form-block__input form-block__input_small" placeholder="Password" required type="password"
+                  minlength="6"
+                  title="min 6 characters, required: 1 capital letter, 1 lower-case letter, 1 digit, 1 special character"
+                  pattern="(?=.*\d)(?=.\W+)(?=.[a-z])(?=.*[A-Z]).{6,}">
               </div>
               <button class="button button_promoted button_wide">
                 <span class="button__text">Get Started</span>
@@ -74,7 +82,9 @@
           </div>
         </div>
       </section>
-      <section class="section section_bg-default">
+    </div>
+    <main>
+      <section class="section section_bg-default section_shadow">
         <div class="wrapper_content wrapper_thin">
           <div class="content">
             <p class="content__title">
@@ -86,18 +96,16 @@
             </p>
           </div>
           <nav class="social-media social-media_big">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-google-plus-g"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-stumbleupon"></i>
-            <i class="fas fa-rss"></i>
+            <i class="social-media__icon fab fa-facebook-f"></i>
+            <i class="social-media__icon fab fa-twitter"></i>
+            <i class="social-media__icon fab fa-google-plus-g"></i>
+            <i class="social-media__icon fab fa-pinterest"></i>
+            <i class="social-media__icon fab fa-instagram"></i>
+            <i class="social-media__icon fab fa-stumbleupon"></i>
+            <i class="social-media__icon fas fa-rss"></i>
           </nav>
         </div>
       </section>
-    </div>
-    <main>
       <section class="section section_bg-light">
         <div class="wrapper_content">
           <article class="tabs">
@@ -109,11 +117,11 @@
                 </span>
               </label>
               <div class="tabs__tab-content">
-                <div class="content">
+                <div class="content tabs__tab-content_sub">
                   <h3 class="content__title">
                     Tabs with soft transitioning effect.
                   </h3>
-                  <p class="content__text">
+                  <p class="content__text tabs__tab-content_indent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                     justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -122,9 +130,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                     bibendum laoreet.
                   </p>
-                  <button class="button button_promoted" type="submit">
-                    <span class="button__text">Download</span>
-                  </button>
+                  <form target="_blank" method="GET" action="./assets/modulepatterns.pdf">
+                    <button class="button button_promoted" type="submit">
+                      <span class="button__text">Download</span>
+                    </button>
+                  </form>
                 </div>
                 <img src="./assets/tabs-image.png">
               </div>
@@ -137,11 +147,11 @@
                 </span>
               </label>
               <div class="tabs__tab-content">
-                <div class="content">
+                <div class="content tabs__tab-content_sub">
                   <h3 class="content__title">
-                    Tabs with soft transitioning effect.
+                    Tabs with some transitioning effect.
                   </h3>
-                  <p class="content__text">
+                  <p class="content__text tabs__tab-content_indent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                     justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -150,9 +160,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                     bibendum laoreet.
                   </p>
-                  <button class="button button_promoted" type="submit">
-                    <span class="button__text">Download</span>
-                  </button>
+                  <form target="_blank" method="GET" action="./assets/modulepatterns.pdf">
+                    <button class="button button_promoted" type="submit">
+                      <span class="button__text">Download</span>
+                    </button>
+                  </form>
                 </div>
                 <img src="./assets/tabs-image.png">
               </div>
@@ -165,11 +177,11 @@
                 </span>
               </label>
               <div class="tabs__tab-content">
-                <div class="content">
+                <div class="content tabs__tab-content_sub">
                   <h3 class="content__title">
-                    Tabs with soft transitioning effect.
+                    Tabs with your transitioning effect.
                   </h3>
-                  <p class="content__text">
+                  <p class="content__text tabs__tab-content_indent">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                     justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -178,11 +190,13 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                     bibendum laoreet.
                   </p>
-                  <button class="button button_promoted" type="submit">
-                    <span class="button__text">Download</span>
-                  </button>
+                  <form target="_blank" method="GET" action="./assets/modulepatterns.pdf">
+                    <button class="button button_promoted" type="submit">
+                      <span class="button__text">Download</span>
+                    </button>
+                  </form>
                 </div>
-                <img src="./assets/andrey.png">
+                <img src="./assets/tabs-image.png">
               </div>
             </div>
           </article>
@@ -203,8 +217,8 @@
               </p>
             </div>
             <div class="wrapper_flex">
-              <i class="icon_round icon_md icon_color-brand fas fa-cloud-upload-alt"></i>
-              <div class="content">
+              <i class="icon_round icon_flex icon_md icon_color-brand fas fa-cloud-upload-alt"></i>
+              <div class="content content_icon">
                 <h3 class="content__title">
                   Title
                 </h3>
@@ -216,7 +230,7 @@
             </div>
             <div class="wrapper_flex">
               <i class="icon_round icon_md icon_color-brand fas fa-cloud-upload-alt"></i>
-              <div class="content">
+              <div class="content content_icon">
                 <h3 class="content__title">
                   Title
                 </h3>
@@ -251,7 +265,7 @@
       </section>
       <section class="section section_bg-default">
         <div class="wrapper_content wrapper_content-column">
-          <div class="content content_center">
+          <div class="content content_center content_indent-vertical-lg">
             <h2 class="content__title_sub content_divider-center">
               why this is awesome
             </h2>
@@ -261,7 +275,7 @@
           </div>
           <section class="wrapper_flex">
             <article class="content content_center content_indent">
-              <i class="icon_round icon_md icon_color-brand fas fa-lightbulb"></i>
+              <i class="icon_round icon_lg icon_color-brand fas fa-lightbulb"></i>
               <h3 class="content__title content__title_top-indent">
                 Thoughtful design
               </h3>
@@ -272,7 +286,7 @@
               </p>
             </article>
             <article class="content content_center content_indent">
-              <i class="icon_round icon_md icon_color-brand far fa-keyboard"></i>
+              <i class="icon_round icon_lg icon_color-brand far fa-keyboard"></i>
               <h3 class="content__title content__title_top-indent">
                 Well crafted
               </h3>
@@ -283,7 +297,7 @@
               </p>
             </article>
             <article class="content content_center content_indent">
-              <i class="icon_round icon_md icon_color-brand fas fa-bolt"></i>
+              <i class="icon_round icon_lg icon_color-brand fas fa-bolt"></i>
               <h3 class="content__title content__title_top-indent">
                 Easy to Customize
               </h3>
@@ -298,7 +312,7 @@
       </section>
       <section class="section section_bg-light">
         <div class="wrapper_content wrapper_content-column">
-          <div class="content">
+          <div class="content content_center content_indent-vertical-lg">
             <h2 class="content__title_sub content_divider-center">
               pricing options
             </h2>
@@ -409,7 +423,7 @@
       </section>
       <section class="section section_bg-default">
         <div class="wrapper_content wrapper_content-column">
-          <div class="content content_center">
+          <div class="content content_center content_indent-vertical-md">
             <h2 class="content__title_sub content_divider-center">
               what our customers are saying
             </h2>
@@ -428,7 +442,7 @@
               </p>
               <div class="wrapper_flex-start">
                 <img class="icon_lg" src="./assets/misha.jpeg" alt="misha">
-                <div class="content content_indent">
+                <div class="content content_indent content_vertical-center">
                   <h3 class="content__title">
                     Jeremy H.
                   </h3>
@@ -448,7 +462,7 @@
               </p>
               <div class="wrapper_flex-start">
                 <img class="icon_lg" src="./assets/timur.jpeg" alt="misha">
-                <div class="content content_indent">
+                <div class="content content_indent content_vertical-center">
                   <h3 class="content__title">
                     John S.
                   </h3>
@@ -468,7 +482,7 @@
               </p>
               <div class="wrapper_flex-start">
                 <img class="icon_lg" src="./assets/andrey.png" alt="misha">
-                <div class="content content_indent">
+                <div class="content content_indent content_vertical-center">
                   <h3 class="content__title">
                     Susan W.
                   </h3>
@@ -492,9 +506,11 @@
               Create gorgeous prototypes faster than ever!
             </p>
           </div>
-          <button class="button">
-            <span class="button__text">Download</span>
-          </button>
+          <form method="GET" action="./assets/modulepatterns.pdf" target="_blank">
+            <button class="button">
+              <span class="button__text">Download</span>
+            </button>
+          </form>
         </div>
       </section>
       <section class="section section_bg-default">
@@ -510,11 +526,13 @@
           <form class="form-block" action="#" method="POST" name="message-form">
             <div class="form-block__container">
               <div class="form-block_wide">
-                <input class="form-block__input" type="text" placeholder="Name" title="Only latin letters" required pattern="^[A-Za-z]+$">
+                <input class="form-block__input" type="text" placeholder="Name" title="Only latin letters" required
+                  pattern="^[A-Za-z]+$">
                 <input class="form-block__input" type="email" placeholder="Email" required>
                 <input class="form-block__input" type="text" placeholder="Subject" required>
               </div>
-              <textarea class="form-block__input form-block_wide form-block__input_fixed" title="Max 250 symbols" placeholder="Message" maxlength="250" required pattern></textarea>
+              <textarea class="form-block__input form-block_wide form-block__input_fixed" title="Max 250 symbols"
+                placeholder="Message" maxlength="250" required pattern></textarea>
             </div>
             <button class="button button_promoted" type="submit">
               <span class="button__text">Send Message</span>
@@ -525,15 +543,15 @@
     </main>
   </div>
   <footer class="section section_bg-dark">
-    <div class="wrapper_content wrapper_content-column wrapper_thin">
+    <div class="wrapper_content wrapper_content-column wrapper_thin wrapper_foot">
       <nav class="social-media social-media_small">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-google-plus-g"></i>
-        <i class="fab fa-pinterest"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-stumbleupon"></i>
-        <i class="fas fa-rss"></i>
+        <i class="social-media__icon fab fa-facebook-f"></i>
+        <i class="social-media__icon fab fa-twitter"></i>
+        <i class="social-media__icon fab fa-google-plus-g"></i>
+        <i class="social-media__icon fab fa-pinterest"></i>
+        <i class="social-media__icon fab fa-instagram"></i>
+        <i class="social-media__icon fab fa-stumbleupon"></i>
+        <i class="social-media__icon fas fa-rss"></i>
       </nav>
       <p class="copyright">© 2015 Axure Themes</p>
     </div>

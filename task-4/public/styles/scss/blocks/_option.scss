@@ -14,7 +14,9 @@
     }
 
     &_text {
-      height: 100px;
+      height: 60px;
+      padding-top: 30px;
+      align-items: baseline;
       @include font-raleway-bold;
       color: $color-title-light;
     }

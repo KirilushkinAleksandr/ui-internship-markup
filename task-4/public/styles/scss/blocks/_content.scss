@@ -1,7 +1,15 @@
 .content {
   display: flex;
   flex-direction: column;
-  white-space: pre-line;
+
+  &_icon {
+    margin-left: 70px;
+  }
+
+  &_vertical-center {
+    justify-content: center;
+    padding-left: 15px;
+  }
 
   &_center {
     align-items: center;
@@ -9,7 +17,17 @@
   }
 
   &_indent {
-    padding: 0 5px;
+    padding: 0 15px;
+
+    &-vertical {
+      &-md {
+        padding-bottom: 50px;
+      }
+
+      &-lg {
+        padding-bottom: 80px;
+      }
+    }
   }
 
   &_divider {
@@ -18,7 +36,7 @@
         content: "";
         display: flex;
         border-bottom: 2px solid $color-brand;
-        width: 72px;
+        width: 64px;
         margin: auto;
         margin-top: 30px;
       }

@@ -3,18 +3,33 @@
   height: 50px;
   background-color: transparent;
   border-width: 2px;
+  border: 2px solid $color-bg-light;
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__text {
     @include font-opensans-semi-bold-md;
     color: $color-title-light;
+  }
+
+  &:hover {
+    background-color: $color-bg-default;
+    & > .button__text {
+      color: $color-subtitle-dark;
+    }
   }
 
   &_promoted {
     background-color: $color-brand;
     border-radius: 2px;
     border: none;
+
+    &:hover {
+      opacity: 0.8;
+      background-color: $color-brand;
+      color: $color-title-light;
+    }
   }
 
   &_wide {

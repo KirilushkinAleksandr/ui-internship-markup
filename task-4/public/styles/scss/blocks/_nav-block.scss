@@ -9,5 +9,8 @@
     opacity: 0.69;
     text-decoration: none;
 
+    &:hover {
+      opacity: 1;
+    }
   }
 }
