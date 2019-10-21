@@ -52,18 +52,20 @@
   font-weight: 600;
 }
 
-@mixin font-opensans-regular-md {
-  @include font-opensans-regular;
-  font-size: 12px;
-}
-
-@mixin font-opensans-regular-lg-italic {
-  @include font-opensans-regular-lg;
-  font-style: italic;
-}
-
 @mixin font-upper {
   text-transform: uppercase;
+}
+
+@mixin font-opensans-bold-md {
+  @include font-opensans-bold;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin font-opensans-bold-sm {
+  @include font-opensans-bold;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 @mixin font-opensans-bold-lg {
@@ -77,10 +79,26 @@
   line-height: 24px;
 }
 
+@mixin font-opensans-regular-md-italic {
+  @include font-opensans-regular;
+  font-size: 14px;
+  font-style: italic;
+}
+
 @mixin font-opensans-regular-lg {
   @include font-opensans-regular;
   font-size: 15px;
   line-height: 20px;
+}
+
+@mixin font-opensans-regular-sm {
+  @include font-opensans-regular;
+  font-size: 12px;
+}
+
+@mixin font-opensans-regular-lg-italic {
+  @include font-opensans-regular-lg;
+  font-style: italic;
 }
 
 @mixin font-opensans-semi-bold-sm {
@@ -88,16 +106,17 @@
   font-size: 14px;
 }
 
-@mixin font-opensans-semi-bold-italic {
-  @include font-opensans-semi-bold;
-  font-style: italic;
-  line-height: 24px;
-}
-
 @mixin font-opensans-semi-bold-md {
   @include font-opensans-semi-bold;
   font-size: 15px;
 }
+
+@mixin font-opensans-semi-bold-italic {
+@include font-opensans-semi-bold;
+  font-style: italic;
+  line-height: 24px;
+}
+
 
 @mixin horizontal-line($color) {
   background: linear-gradient(to top, $color 5%, transparent 5%);
@@ -107,4 +126,10 @@
 
 @mixin font-awesome {
   font-size: 48px;
+}
+
+@mixin round-image($size) {
+  border-radius: $size / 2;
+  width: $size;
+  height: $size;
 }

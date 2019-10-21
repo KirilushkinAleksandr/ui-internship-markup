@@ -13,7 +13,13 @@
 
   &_promoted {
     background-color: $color-brand;
-    width: 100%;
+    border-radius: 2px;
     border: none;
+  }
+
+  &_wide {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
   }
 }

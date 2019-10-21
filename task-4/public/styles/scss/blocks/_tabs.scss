@@ -1,0 +1,47 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  &__item {
+    // position: relative;
+    width: 100%;
+  }
+
+  &__radio {
+    display: none;
+    &:checked{
+      & ~ .tabs__tab-label {
+        background-color: $color-brand;
+      }
+      & ~ .tabs__tab-content {
+        display: flex;
+        position: absolute;
+        left: 100px;
+        top: 0;
+      }
+    }
+  }
+
+  &__tab-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: $color-subtitle-dark;
+    margin: 1px;
+
+    &-text {
+      @include font-opensans-bold-md;
+      @include font-upper;
+      color: $color-title-light;
+    }
+  }
+
+  &__tab-content {
+    display: none;
+    padding-left: 100px;
+  }
+}

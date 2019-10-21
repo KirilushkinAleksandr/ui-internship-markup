@@ -17,7 +17,7 @@
   <div class="page__content">
     <div class="page__hero-wrapper">
       <header class="section section_bg-dark">
-        <div class="wrapper_content">
+        <div class="wrapper_content wrapper_head">
           <h2 class="logo logo_header">
             ax<span class="logo__end">it</span>
           </h2>
@@ -32,12 +32,12 @@
       </header>
       <section class="section section__hero section_bg-image section_bg-image-hero">
         <div class="wrapper_content">
-          <div>
+          <div class="wrapper_wide">
             <h1 class="logo logo_hero">
               ax<span class="logo__end">it</span>
             </h1>
             <div class="content">
-              <p class="content__title_hero">
+              <p class="content__title_hero content_divider">
                 modern axure template
                 for beautiful prototypes
               </p>
@@ -51,7 +51,7 @@
               <span class="button__text">Download</span>
             </button>
           </div>
-          <div class="form-block">
+          <div class="form-block form-block_fixed">
             <div class="form-block__title">
               <span class="form-block__title-text">
                 Try Your
@@ -61,13 +61,13 @@
                 Trial Today
               </span>
             </div>
-            <form class="form-block__form">
-              <div class="form-block__inputs-container">
-                <input class="form-block__input" placeholder="Name" type="text">
-                <input class="form-block__input" placeholder="Email" type="email">
-                <input class="form-block__input" placeholder="Password" type="password">
+            <form class="form-block" method="POST" action="#" name="subscribe-form">
+              <div class="form-block__container form-block__container_wide">
+                <input class="form-block__input form-block__input_small" placeholder="Name" title="Only latin letters" required pattern="^[A-Za-z]+$" type="text">
+                <input class="form-block__input form-block__input_small" placeholder="Email" required type="email">
+                <input class="form-block__input form-block__input_small" placeholder="Password" required type="password" minlength="6" title="min 6 characters, required: 1 capital letter, 1 lower-case letter, 1 digit, 1 special character" pattern="[A-Z]+[a-z]+\d+\W+">
               </div>
-              <button class="button button_promoted">
+              <button class="button button_promoted button_wide">
                 <span class="button__text">Get Started</span>
               </button>
             </form>
@@ -75,7 +75,7 @@
         </div>
       </section>
       <section class="section section_bg-default">
-        <div class="wrapper_content">
+        <div class="wrapper_content wrapper_thin">
           <div class="content">
             <p class="content__title">
               Social Media
@@ -101,39 +101,131 @@
       <section class="section section_bg-light">
         <div class="wrapper_content">
           <article class="tabs">
+            <div class="tabs__item">
+              <input class="tabs__radio" type="radio" name="tabs" id="tab-1" checked>
+              <label class="tabs__tab-label" for="tab-1">
+                <span class="tabs__tab-label-text">
+                  tab 1
+                </span>
+              </label>
+              <div class="tabs__tab-content">
+                <div class="content">
+                  <h3 class="content__title">
+                    Tabs with soft transitioning effect.
+                  </h3>
+                  <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.
 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+                  </p>
+                  <button class="button button_promoted" type="submit">
+                    <span class="button__text">Download</span>
+                  </button>
+                </div>
+                <img src="./assets/tabs-image.png">
+              </div>
+            </div>
+            <div class="tabs__item">
+              <input class="tabs__radio" type="radio" name="tabs" id="tab-2">
+              <label class="tabs__tab-label" for="tab-2">
+                <span class="tabs__tab-label-text">
+                  tab 2
+                </span>
+              </label>
+              <div class="tabs__tab-content">
+                <div class="content">
+                  <h3 class="content__title">
+                    Tabs with soft transitioning effect.
+                  </h3>
+                  <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+                  </p>
+                  <button class="button button_promoted" type="submit">
+                    <span class="button__text">Download</span>
+                  </button>
+                </div>
+                <img src="./assets/tabs-image.png">
+              </div>
+            </div>
+            <div class="tabs__item">
+              <input class="tabs__radio" type="radio" name="tabs" id="tab-3">
+              <label class="tabs__tab-label" for="tab-3">
+                <span class="tabs__tab-label-text">
+                  tab 3
+                </span>
+              </label>
+              <div class="tabs__tab-content">
+                <div class="content">
+                  <h3 class="content__title">
+                    Tabs with soft transitioning effect.
+                  </h3>
+                  <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+                  </p>
+                  <button class="button button_promoted" type="submit">
+                    <span class="button__text">Download</span>
+                  </button>
+                </div>
+                <img src="./assets/andrey.png">
+              </div>
+            </div>
           </article>
         </div>
       </section>
       <section class="section section_bg-default">
         <div class="wrapper_content">
           <img src="./assets/image_left_sub_list_u260.png" alt="a picture of old town roofs">
-          <div class="functions">
+          <div class="articles articles_column">
             <div class="content">
-              <h2 class="content__title"></h2>
+              <h2 class="content__title content_divider">
+                Sub list section
+              </h2>
               <p class="content__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                 accumsan et viverra justo commodo.
               </p>
             </div>
-            <div class="functions__item content">
-              <h3>
-                Title
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean euismod bibendum laoreet.
-              </p>
+            <div class="wrapper_flex">
+              <i class="icon_round icon_md icon_color-brand fas fa-cloud-upload-alt"></i>
+              <div class="content">
+                <h3 class="content__title">
+                  Title
+                </h3>
+                <p class="content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+              </div>
             </div>
-            <div class="functions__item content">
-              <h3>
-                Title
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean euismod bibendum laoreet.
-              </p>
+            <div class="wrapper_flex">
+              <i class="icon_round icon_md icon_color-brand fas fa-cloud-upload-alt"></i>
+              <div class="content">
+                <h3 class="content__title">
+                  Title
+                </h3>
+                <p class="content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor
+                  sit amet lacus accumsan et viverra justo commodo.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -141,7 +233,7 @@
       <section class="section section_bg-light">
         <div class="wrapper_content">
           <div class="content">
-            <h2 class="content__title">
+            <h2 class="content__title content_divider">
               Standard picture section
             </h2>
             <p class="content__text">
@@ -158,52 +250,243 @@
         </div>
       </section>
       <section class="section section_bg-default">
-        <div class="wrapper_content">
-          <div class="content"></div>
-          <section class="articles">
-            <article class="articles__item"></article>
-            <article class="articles__item"></article>
-            <article class="articles__item"></article>
+        <div class="wrapper_content wrapper_content-column">
+          <div class="content content_center">
+            <h2 class="content__title_sub content_divider-center">
+              why this is awesome
+            </h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <section class="wrapper_flex">
+            <article class="content content_center content_indent">
+              <i class="icon_round icon_md icon_color-brand fas fa-lightbulb"></i>
+              <h3 class="content__title content__title_top-indent">
+                Thoughtful design
+              </h3>
+              <p class="content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet. Proin gravida
+                dolor sit amet lacus accumsan et viverra.
+              </p>
+            </article>
+            <article class="content content_center content_indent">
+              <i class="icon_round icon_md icon_color-brand far fa-keyboard"></i>
+              <h3 class="content__title content__title_top-indent">
+                Well crafted
+              </h3>
+              <p class="content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet. Proin gravida
+                dolor sit amet lacus accumsan et viverra.
+              </p>
+            </article>
+            <article class="content content_center content_indent">
+              <i class="icon_round icon_md icon_color-brand fas fa-bolt"></i>
+              <h3 class="content__title content__title_top-indent">
+                Easy to Customize
+              </h3>
+              <p class="content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet. Proin gravida
+                dolor sit amet lacus accumsan et viverra.
+              </p>
+            </article>
           </section>
         </div>
       </section>
       <section class="section section_bg-light">
-        <div class="wrapper_content">
-          <div class="content"></div>
-          <section class="articles">
-            <article class="articles__item"></article>
-            <article class="articles__item"></article>
-            <article class="articles__item"></article>
+        <div class="wrapper_content wrapper_content-column">
+          <div class="content">
+            <h2 class="content__title_sub content_divider-center">
+              pricing options
+            </h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <section class="wrapper_flex wrapper_reversed">
+            <article class="option">
+              <div class="option__title option__title_head">
+                Basic
+              </div>
+              <div class="option__title option__title_text">
+                <span class="option__title_currency">$</span>
+                0
+              </div>
+              <div class="option__title option__title_subtitle">
+                Free for Life
+              </div>
+              <div class="option__status-bar">
+              </div>
+              <div class="option__item">
+                1 gb of space
+              </div>
+              <div class="option__item">
+                10 gb of bandwidth
+              </div>
+              <div class="option__item">
+                3 websites
+              </div>
+              <div class="option__item">
+                basic customization
+              </div>
+              <div class="option__item">
+                wordpress integration
+              </div>
+              <div class="option__item">
+                email support
+              </div>
+            </article>
+            <article class="option">
+              <div class="option__title option__title_head">
+                Professional
+              </div>
+              <div class="option__title option__title_text">
+                <span class="option__title_currency">$</span>
+                19
+              </div>
+              <div class="option__title option__title_subtitle">
+                Monthly Payment
+              </div>
+              <div class="option__item option__item_promoted">
+                our most popular
+              </div>
+              <div class="option__item">
+                5 gb of space
+              </div>
+              <div class="option__item">
+                50 gb of bandwidth
+              </div>
+              <div class="option__item">
+                12 websites
+              </div>
+              <div class="option__item">
+                advanced customization
+              </div>
+              <div class="option__item">
+                wordpress integration
+              </div>
+              <div class="option__item">
+                email support
+              </div>
+            </article>
+            <article class="option">
+              <div class="option__title option__title_head">
+                Enterprise
+              </div>
+              <div class="option__title option__title_text">
+                <span class="option__title_currency">$</span>
+                70
+              </div>
+              <div class="option__title option__title_subtitle">
+                Monthly Payment
+              </div>
+              <div class="option__status-bar">
+              </div>
+              <div class="option__item">
+                unlimited space
+              </div>
+              <div class="option__item">
+                unlimited bandwidth
+              </div>
+              <div class="option__item">
+                100 websites
+              </div>
+              <div class="option__item">
+                advanced customization
+              </div>
+              <div class="option__item">
+                wordpress integration
+              </div>
+              <div class="option__item">
+                24/7 customer support
+              </div>
+            </article>
           </section>
         </div>
       </section>
       <section class="section section_bg-default">
-        <div class="wrapper_content">
-          <div class="content">
-            <h2 class="content__title">
+        <div class="wrapper_content wrapper_content-column">
+          <div class="content content_center">
+            <h2 class="content__title_sub content_divider-center">
               what our customers are saying
             </h2>
-            <p>
+            <p class="content__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <section class="articles">
-            <article class="articles__item">
-              <img src="" alt="misha">
+          <section class="wrapper_flex">
+            <article class="comment">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Doloribus
+                accusamus expedita repellat similique
+                odio aspernatur ex, architecto eaque
+                quo suscipit.
+              </p>
+              <div class="wrapper_flex-start">
+                <img class="icon_lg" src="./assets/misha.jpeg" alt="misha">
+                <div class="content content_indent">
+                  <h3 class="content__title">
+                    Jeremy H.
+                  </h3>
+                  <span class="content__text">
+                    Manager
+                  </span>
+                </div>
+              </div>
             </article>
-            <article class="articles__item">
-
+            <article class="comment">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Doloribus
+                accusamus expedita repellat similique
+                odio aspernatur ex, architecto eaque
+                quo suscipit.
+              </p>
+              <div class="wrapper_flex-start">
+                <img class="icon_lg" src="./assets/timur.jpeg" alt="misha">
+                <div class="content content_indent">
+                  <h3 class="content__title">
+                    John S.
+                  </h3>
+                  <span class="content__text">
+                    Freelancer
+                  </span>
+                </div>
+              </div>
             </article>
-            <article class="articles__item">
-
+            <article class="comment">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Doloribus
+                accusamus expedita repellat similique
+                odio aspernatur ex, architecto eaque
+                quo suscipit.
+              </p>
+              <div class="wrapper_flex-start">
+                <img class="icon_lg" src="./assets/andrey.png" alt="misha">
+                <div class="content content_indent">
+                  <h3 class="content__title">
+                    Susan W.
+                  </h3>
+                  <span class="content__text">
+                    Photographer
+                  </span>
+                </div>
+              </div>
             </article>
           </section>
         </div>
       </section>
       <section class="section section_bg-image section_bg-image-content">
         <div class="wrapper_content wrapper_content-column">
-          <div class="content">
-            <h2 class="content__title_hero">stylish axure design</h2>
+          <div class="content content_center">
+            <h2 class="content__title_hero content_divider-center">
+              stylish axure design
+            </h2>
             <p class="content__text_hero">
               Use the sections you need, remove the ones you don't.
               Create gorgeous prototypes faster than ever!
@@ -216,31 +499,33 @@
       </section>
       <section class="section section_bg-default">
         <div class="wrapper_content wrapper_content-column">
-          <div class="content">
-            <h2 class="content__title">contact us</h2>
+          <div class="content content_center">
+            <h2 class="content__title_sub content_divider-center">
+              contact us
+            </h2>
             <p class="content__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div class="form-block">
-            <form class="form-block__form">
-              <div class="form-block__inputs-container">
-                <input type="text">
-                <input type="email">
-                <input type="text">
-                <textarea></textarea>
+          <form class="form-block" action="#" method="POST" name="message-form">
+            <div class="form-block__container">
+              <div class="form-block_wide">
+                <input class="form-block__input" type="text" placeholder="Name" title="Only latin letters" required pattern="^[A-Za-z]+$">
+                <input class="form-block__input" type="email" placeholder="Email" required>
+                <input class="form-block__input" type="text" placeholder="Subject" required>
               </div>
-              <button class="button button_promoted" type="submit">
-                <span class="button__text">Send Message</span>
-              </button>
-            </form>
-          </div>
+              <textarea class="form-block__input form-block_wide form-block__input_fixed" title="Max 250 symbols" placeholder="Message" maxlength="250" required pattern></textarea>
+            </div>
+            <button class="button button_promoted" type="submit">
+              <span class="button__text">Send Message</span>
+            </button>
+          </form>
         </div>
       </section>
     </main>
   </div>
   <footer class="section section_bg-dark">
-    <div class="wrapper_content">
+    <div class="wrapper_content wrapper_content-column wrapper_thin">
       <nav class="social-media social-media_small">
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>
@@ -250,7 +535,7 @@
         <i class="fab fa-stumbleupon"></i>
         <i class="fas fa-rss"></i>
       </nav>
-      <p class="copyright">2015 Axure Themes</p>
+      <p class="copyright">© 2015 Axure Themes</p>
     </div>
   </footer>
 </body>

@@ -1,0 +1,21 @@
+.icon {
+  &_round {
+    border: 2px solid;
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_md {
+    @include round-image(40px);
+  }
+
+  &_lg {
+    @include round-image(70px);
+  }
+
+  &_color-brand {
+    color: $color-brand;
+  }
+}

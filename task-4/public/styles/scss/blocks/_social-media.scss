@@ -3,11 +3,14 @@
   justify-content: space-between;
   align-items: center;
   color: $color-icon;
+
   &_big {
+    width: 634px;
     font-size: 48px;
   }
 
   &_small {
+    width: 317px;
     font-size: 24px;
   }
 }

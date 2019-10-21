@@ -3,15 +3,60 @@
   flex-direction: column;
   white-space: pre-line;
 
+  &_center {
+    align-items: center;
+    text-align: center;
+  }
+
+  &_indent {
+    padding: 0 5px;
+  }
+
+  &_divider {
+    &-center {
+      &::after {
+        content: "";
+        display: flex;
+        border-bottom: 2px solid $color-brand;
+        width: 72px;
+        margin: auto;
+        margin-top: 30px;
+      }
+    }
+    &::after {
+      content: "";
+      display: flex;
+      border-bottom: 2px solid $color-brand;
+      width: 72px;
+      margin-top: 30px;
+    }
+  }
+
   &__title {
+    margin: 0;
+    white-space: normal;
+    @include font-opensans-bold-lg;
+    color: $color-subtitle-dark;
+
+    &_top-indent {
+      margin-top: 30px;
+    }
+
+    &_sub {
+      @include font-raleway-regular;
+      line-height: 43px;
+      color: $color-title-dark;
+      margin: 0;
+    }
+
     &_hero {
       @include font-raleway-regular;
       color: $color-title-light;
-      @include horizontal-line($color-title-light);
+      margin: 0;
+      &::after {
+        border-color: $color-title-light;
+      }
     }
-    @include font-opensans-bold-lg;
-    color: $color-subtitle-dark;
-    @include horizontal-line($color-brand);
   }
 
   &__text {
