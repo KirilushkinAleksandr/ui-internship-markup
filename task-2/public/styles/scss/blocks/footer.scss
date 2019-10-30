@@ -1,0 +1,23 @@
+.footer {
+  flex-shrink: 0;
+  height: 100px;
+  background-color: $color-signup;
+  width: 100%;
+  align-self: center;
+  &__wrapper {
+    width: 87.5%;
+    max-width: 1050px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    &_link-style {
+      text-decoration: none;
+      @include font-playfair-md-no-transform;
+      margin-right: 15px;
+    }
+  }
+}

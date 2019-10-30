@@ -1,0 +1,61 @@
+@mixin font-inconsolata-md {
+  color: $color-title;
+  font-family: Inconsolata;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+@mixin navigation-item {
+  @include font-playfair-md-no-transform;
+  color: $color-text;
+  text-transform: uppercase;
+}
+
+@mixin font-ubuntu-thin {
+  color: $color-link;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin font-playfair-xl {
+  color: $color-text;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@mixin font-playfair-md {
+  color: $color-text;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin font-playfair-xl-narrow {
+  @include font-playfair-xl;
+  color: $color-signup-title;
+  letter-spacing: 0.75px;
+}
+
+@mixin font-playfair-lg {
+  @include font-playfair-md;
+  font-size: 20px;
+}
+
+@mixin font-playfair-md-no-transform {
+  @include font-playfair-md;
+  color: $color-title;
+  text-transform: none;
+}
+
+@mixin font-input {
+  color: $color-text;
+  font-size: 18px;
+}
+

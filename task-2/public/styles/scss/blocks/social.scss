@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  align-items: center;
+  &__link {
+    @include font-playfair-md-no-transform;
+    &_icon {
+      margin-left: 10px;
+      width: 32px;
+      height: 32px;
+      &-facebook {
+        background: url(../../assets/facebook-icon.svg) no-repeat center;
+      }
+      &-twitter {
+        background: url(../../assets/twitter-icon.svg) no-repeat center;
+      }
+      &-instagram {
+        background: url(../../assets/instagram-icon.svg) no-repeat center;
+      }
+    }
+  }
+}

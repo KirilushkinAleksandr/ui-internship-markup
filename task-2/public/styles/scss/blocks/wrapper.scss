@@ -1,0 +1,36 @@
+.wrapper {
+  &_page {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_content {
+    width: 87.5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_sticky {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+@media all and (max-width: 768px) {
+  .wrapper_line {
+    align-items: center;
+    flex-direction: column;
+  }
+}

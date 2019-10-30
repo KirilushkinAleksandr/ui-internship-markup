@@ -1,0 +1,45 @@
+.article {
+  padding-bottom: 100px;
+  width: 47%;
+
+  &_promoted {
+    width: 100%;
+  }
+
+  &__promo {
+    width: 100%;
+    &_promoted {
+      width: 113.5%;
+      margin-bottom: 100px;
+      position: relative;
+      right: 7.15%;
+    }
+  }
+
+  &__category {
+    display: block;
+    margin-top: 1em;
+  }
+
+  &__title {
+    @include font-playfair-xl;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    @include font-playfair-md;
+    white-space: pre-wrap;
+    &_promoted {
+      white-space: normal;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .article {
+    width: 100%;
+    &__text {
+      white-space: normal;
+    }
+  }
+}

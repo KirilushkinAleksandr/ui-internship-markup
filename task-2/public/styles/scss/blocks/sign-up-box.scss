@@ -1,0 +1,10 @@
+.sign-up-box {
+  background-color: $color-signup;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    @include font-playfair-xl-narrow;
+  }
+}
