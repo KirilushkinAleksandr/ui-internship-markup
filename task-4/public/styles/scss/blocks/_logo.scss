@@ -1,0 +1,19 @@
+.logo {
+  @include font-opensans-semi-bold;
+  color: $color-title-light;
+  text-transform: uppercase;
+
+  &__end {
+    @include font-opensans-light;
+    color: $color-brand;
+  }
+
+  &_header {
+    flex: 2 0 auto;
+    font-size: 27px;
+  }
+
+  &_hero {
+    font-size: 60px;
+  }
+}

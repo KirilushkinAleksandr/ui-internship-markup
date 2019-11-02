@@ -1,0 +1,26 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  max-width: 275px;
+  position: relative;
+
+  &__text {
+    @include font-opensans-regular-md-italic;
+    color: $color-text;
+    background-color: $color-bg-light;
+    position: relative;
+    padding: 25px 15px;
+    border-radius: 2px;
+
+    &::after {
+      content: '';
+      background-color: $color-bg-light;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      bottom: -8px;
+      left: 28px;
+      transform: rotate(45deg);
+    }
+  }
+}

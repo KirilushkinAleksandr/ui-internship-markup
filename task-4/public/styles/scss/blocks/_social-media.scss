@@ -1,0 +1,21 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-icon;
+
+  &__icon:hover {
+    color: $color-brand;
+    cursor: pointer;
+  }
+
+  &_big {
+    width: 634px;
+    font-size: 48px;
+  }
+
+  &_small {
+    width: 317px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,16 @@
+.nav-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  &__item {
+    @include font-opensans-semi-bold-sm;
+    color: $color-title-light;
+    opacity: 0.69;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
