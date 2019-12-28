@@ -1,0 +1,30 @@
+.form-block {
+  background-color: $color-form-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0;
+
+  &__subtitle {
+    @include font_Exo_md_uppercase;
+    color: $color-brand;
+    margin: 0;
+  }
+
+  &__title {
+    @include font_Exo_xl;
+    color: $color-text-light;
+    margin: 0;
+  }
+
+  &__text {
+    @include font_Exo_md_light;
+    opacity: 0.6;
+    color: $color-form-text;
+  }
+
+  &__link {
+    color: $color-form-text;
+  }
+}

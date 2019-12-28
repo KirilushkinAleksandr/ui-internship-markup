@@ -1,0 +1,9 @@
+.navigation-block {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  &__link-icon {
+    text-decoration: none;
+    filter: invert(100%) sepia(0%) saturate(0%);
+  }
+}

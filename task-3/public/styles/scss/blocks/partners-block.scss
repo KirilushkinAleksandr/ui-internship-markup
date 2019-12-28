@@ -1,0 +1,20 @@
+.partners-block {
+  background-image: url('../../assets/triangles-bg.png');
+  background-color: $color-text-dark;
+  padding: 5% 10%;
+
+  &__items-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+
+  &__icon {
+    filter: invert(60%);
+  }
+}

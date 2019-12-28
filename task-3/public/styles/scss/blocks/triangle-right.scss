@@ -1,0 +1,17 @@
+.triangle-right {
+  position: relative;
+
+  &__wrapper {
+    align-items: stretch;
+    width: 60%;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      background-image: linear-gradient(135deg, #ededed 58.3%, #ff8a8a 50%);
+    }
+  }
+}
